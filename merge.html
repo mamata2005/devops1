@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart Clone</title>
+
+  <!-- Embedded CSS -->
+  <style>
+    /* Paste content of style.css here */
+    body {
+      background-color: #f1f3f6;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #2874f0;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    /* More styles... */
+  </style>
+</head>
+<body>
+  <!-- Paste content of index.html here (main body only) -->
+
+  <header class="navbar">
+    <div class="logo">Flipkart</div>
+    <input type="text" placeholder="Search products..." id="searchBox" />
+    <button onclick="search()">Search</button>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product" />
+        <h3>Product 1</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+      </div>
+      <!-- More products -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flipkart Clone. All rights reserved.</p>
+  </footer>
+
+  <!-- Embedded JS -->
+  <script>
+    // Paste content of script.js here
+    function addToCart(productName) {
+      alert(productName + " added to cart!");
+    }
+
+    function search() {
+      const query = document.getElementById('searchBox').value;
+      if (query.trim() === "") {
+        alert("Please enter a search term.");
+      } else {
+        alert("Searching for: " + query);
+      }
+    }
+  </script>
+</body>
+</html>
